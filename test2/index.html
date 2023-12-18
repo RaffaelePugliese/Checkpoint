@@ -9,7 +9,7 @@
     <script>
         let p = document.createElement('p')
         let p_= document.createElement('p')
-        const pokeName = ""
+        const pokeName = "charizard"
         async function getData(){
             let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${"charizard"}` )
             let get =  await data.json()
@@ -26,7 +26,7 @@
                 console.log(el)
              }
             });
-            
+            p.innerText=obj.name
       
         }
         getData()
